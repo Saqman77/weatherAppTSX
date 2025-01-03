@@ -19,7 +19,7 @@ const Header = () => {
     try {
       const API_KEY = "187215d262353d3ff1cb64376423cc36"; // Replace with your OpenWeather API key
       const response = await fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5&appid=${API_KEY}`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5&appid=${API_KEY}`
       );
       const data = await response.json();
       const cityNames = data.map((item: any) => item.name); // Extract city names
