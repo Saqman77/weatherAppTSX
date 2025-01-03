@@ -71,7 +71,7 @@ const Main = ({ data, loading, time, city
         time={!loading && time ? formatTo12Hour(time) : 'loading....'}
         />
         <RightColumn 
-        city={!loading?(city):('loading....')}
+        city={!loading ? city : 'loading....'}
         />
       </div>
     </div>
